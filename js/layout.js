@@ -13,7 +13,7 @@ $(document).ready(function(){
         dots: false,
         arrows: false,
         infinite: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
     });
 
@@ -24,7 +24,7 @@ $(document).ready(function(){
         dots: false,
         arrows: false,
         infinite: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
     });
 
