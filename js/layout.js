@@ -51,8 +51,6 @@ $(window).scroll(function(){
     var meTop = $('.about-me').offset().top;
     var headerHeight = $('header').outerHeight();
 
-    let f = true;
-
     if(scrollValue > meTop - headerHeight){
         $('header').addClass('active');
     } else {
