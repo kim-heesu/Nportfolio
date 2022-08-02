@@ -1,10 +1,5 @@
 
 $(document).ready(function(){
-    /*aos*/
-    $(function(){
-        AOS.init();
-    });
-
     /*slick slide*/
     $(".page-slide").slick({
         slidesToShow: 3,
