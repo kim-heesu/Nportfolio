@@ -109,7 +109,6 @@ html {
 }
 .slick-slide {
     float: left;
-    margin: 0 10px;
 }
 /* header */
 header {
@@ -532,6 +531,33 @@ section .content {
     position: relative;
     display: inline-block;
 }
+.portfolio .img-area .promotion-slide{
+    width: 554px;
+}
+.portfolio .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.portfolio .slick-dots li button {
+    width: 8px;
+    height: 8px;
+    margin: 0 5px;
+    font-size: 0;
+    border: 1px solid #37d65f;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.portfolio .slick-dots li.slick-active button{
+    background:#37d65f;
+}
+.portfolio .slick-dots li + li {
+    margin-top: 0;
+}
 .portfolio .label-list {
     position: absolute;
     top: 0;
@@ -595,6 +621,7 @@ h2 + .slide-wrap {
 }
 .other .page-box {
     max-width: 380px;
+    padding: 0 10px;
 }
 .other h3 {
     margin: 15px 0 10px;
