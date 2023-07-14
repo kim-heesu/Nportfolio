@@ -223,13 +223,13 @@ header .menu-content h2 + p {
     margin-top: 20px;
 }
 header .menu-content ul {
-    margin: 120px 0;
+    margin: 100px 0;
 }
 header .menu-content ul li {
-    font-size: 26px;
+    font-size: 23px;
 }
 header .menu-content ul li + li {
-    margin-top: 48px;
+    margin-top: 35px;
 }
 header .menu-content ul li a {
     display: block;
