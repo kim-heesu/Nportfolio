@@ -39,7 +39,7 @@ $(document).ready(function(){
     });
 
     // skill list
-    const listInfo = ['HTML5','CSS3','jQuery','javascript','Github','Sass','Photoshop','figma','Jira','SourceTree','Trello','Visual Studio Code','phpstorm']
+    const listInfo = ['HTML5','CSS3','javascript','jQuery','Vue.js','Vuex','Axios','Github','Sass','Photoshop','figma','Jira','SourceTree','Trello']
     let listLength = 0;
     let appendList = setInterval(function(){
         $('.about-skill ul').append('<li><span>'+listInfo[listLength]+'</span></li>')
