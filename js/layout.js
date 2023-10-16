@@ -1,4 +1,31 @@
 
+
+    // contact me , send email
+    function sendEmail(){
+        var data = {
+            service_id: 'cjmgmltn',
+            template_id: 'template_gh1gcyl',
+            user_id: '02NYxVsXY2p5eebhG',
+            template_params: {
+                contact_name : document.getElementById('contactName').value,
+                contact_phone : document.getElementById('contactPhone').value,
+                contact_email : document.getElementById('contactEmail').value,
+                contact_content : document.getElementById('contactContent').value,
+            }
+        };
+        
+        $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+            type: 'POST',
+            data: JSON.stringify(data),
+            contentType: 'application/json'
+        }).done(function() {
+            let userName =document.getElementById('contactName').value;
+            alert(userName+'님, 문의주셔서 감사합니다!\n빠른 시일내에 답변드리겠습니다.');
+        }).fail(function(error) {
+            alert('Oops... ' + JSON.stringify(error));
+        });
+    }
+
 $(document).ready(function(){
     /*slick slide*/
     $('.promotion-slide').slick({
