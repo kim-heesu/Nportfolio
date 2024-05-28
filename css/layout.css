@@ -734,7 +734,6 @@ h2 + .slide-wrap {
     .wrap {
         overflow: hidden;
     }
-
     header {
         height: 6rem;
         padding: 0 1.5rem;
@@ -766,7 +765,6 @@ h2 + .slide-wrap {
     header .menu-content .copyright b {
         font-size: 2rem;
     }
-
     footer .inner {
         padding: 4rem 0;
     }
@@ -834,7 +832,6 @@ h2 + .slide-wrap {
         width: 4.6rem;
         height: 5rem;
     }
-
     section {
         padding: 5.5rem 0;
     }
@@ -869,7 +866,6 @@ h2 + .slide-wrap {
     .about-me .content .profile-img img {
         width: 85%;
     }
-
     .about-skill .content {
         position: relative;
         display: block;
@@ -882,6 +878,7 @@ h2 + .slide-wrap {
     }
     .about-skill .content ul {
         padding-bottom: 1rem;
+        background: rgba(0,0,0,0.35);
     }
     .about-skill .content li span {
         font-size: 1.7rem;
@@ -894,7 +891,6 @@ h2 + .slide-wrap {
         height: 100%;
         z-index: -1;
     }
-
     .portfolio ul {
         margin-top: 2.5rem;
     }
@@ -913,7 +909,8 @@ h2 + .slide-wrap {
         width: 100%;
         padding-right: 2.5rem;
     }
-    .portfolio .img-area .pet-promotion-slide, .portfolio .img-area .promotion-slide {
+    .portfolio .img-area .pet-promotion-slide, 
+    .portfolio .img-area .promotion-slide {
         width: 100%;
     }
     .portfolio .label-list {
