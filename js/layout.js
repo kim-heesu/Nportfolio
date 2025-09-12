@@ -49,7 +49,30 @@ function sendEmail(){
     });
 }
 
+// 방문자 수 체크
+function visitCookie(){
+    let expireDate = new Date();  
+    expireDate.setMonth(expireDate.getMonth() + 3);  
+
+    let hitCt = eval(cookieVal("pageHit"));  
+    hitCt++;  
+
+    document.cookie = "pageHit=" + hitCt + ";expires=" + expireDate.toGMTString();  
+
+    function cookieVal(cookieName) {  
+        let thisCookie = document.cookie.split("; ");  
+        for (let i = 0; i < thisCookie.length; i++) {  
+            if (cookieName == thisCookie[i].split("=")[0]) {  
+                return thisCookie[i].split("=")[1];  
+            }   
+        }   
+        return 0;   
+    }   
+    console.log('방문자는? '+hitCt+'명');
+};
+
 $(document).ready(function(){
+    visitCookie();
     /*slick slide*/
     $('.promotion-slide').slick({
         slidesToShow: 1,
